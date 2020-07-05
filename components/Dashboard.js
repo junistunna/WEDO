@@ -191,66 +191,68 @@ static navigationOptions = {
 
 
 const TabNavigator = createBottomTabNavigator({
-  Dashboard:{  
-    screen:Dashboard,  
-    navigationOptions:{  
-      tabBarLabel:'Home',  
-      tabBarIcon:({tintColor})=>(  
-          <Icon name="home" color={tintColor} size={25}/>  
-      ) 
-       
-    }  
-  },  
-  Order:{  
-    screen:Order,  
-    navigationOptions:{  
-      tabBarLabel:'Help',  
-      tabBarIcon:({tintColor})=>(  
-          <Icon name="inbox" color={tintColor} size={25}/>  
-      )  
-    }  
-  },  
+  Dashboard: {
+    screen: Dashboard,
+    navigationOptions: {
+      tabBarLabel: 'Home',
 
-  Cart:{  
-    screen:Cart,  
-    navigationOptions:{  
-      tabBarLabel:'Cart',  
-      tabBarIcon:({tintColor})=>(  
-          <Icon name="shopping-cart" color={tintColor} size={25}/>  
-      )  
-    }  
+      tabBarIcon: () => (
+        <Icon name="home" color={"#BE1E2D"} size={25} tintColor="black" />
+      )
+    }
   },
-  Categories:{  
-    screen:Categories,  
-    navigationOptions:{  
-      tabBarLabel:'Categories',  
-      tabBarIcon:({tintColor})=>(  
-          <Icon name="list-ul" color={tintColor} size={25}/>  
-      )  
-    }  
+  Order: {
+    screen: Order,
+    navigationOptions: {
+      tabBarLabel: 'Order',
+      tabBarIcon: () => (
+        <Icon name="shopping-bag" color={"#BE1E2D"} size={25} />
+      )
+    }
   },
 
-  Profile:{  
-    screen:Profile,  
-    navigationOptions:{  
-      tabBarLabel:'Profile',  
-      tabBarIcon:({tintColor})=>(  
-          <Icon name="user-circle" color={tintColor} size={25}/>  
-      )  
-    }  
+  Cart: {
+    screen: Cart,
+    navigationOptions: {
+      tabBarLabel: 'Cart',
+      tabBarIcon: ({ tintColor }) => (
+        <Icon name="shopping-cart" color={"#BE1E2D"} size={25} />
+      )
+    }
+  },
+  Categories: {
+    screen: Categories,
+    navigationOptions: {
+      tabBarLabel: 'categroies',
+
+      tabBarIcon: ({ tintColor }) => (
+        <Icon name="list-ul" color={"#BE1E2D"} size={25} />
+      )
+    }
   },
 
-  Map:{  
-    screen:Map,  
-    navigationOptions:{  
-      tabBarLabel:'Map',  
-      tabBarIcon:({tintColor})=>(  
-          <Icon name="map-signs" color={tintColor} size={25}/>  
-      )  
-    }  
+  Profile: {
+    screen: Profile,
+    navigationOptions: {
+      tabBarLabel: 'Profile',
+
+      tabBarIcon: ({ tintColor }) => (
+        <Icon name="user-circle" color={"#BE1E2D"} size={25} />
+      )
+    }
   },
 
- });
+  Map: {
+    screen: Map,
+    navigationOptions: {
+      tabBarLabel: 'Map',
+
+      tabBarIcon: ({ tintColor }) => (
+        <Icon name="map-signs" color={"#BE1E2D"} size={25} />
+      )
+    }
+  },
+});
 
 
 

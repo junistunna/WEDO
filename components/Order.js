@@ -5,6 +5,7 @@ import CustomHeader from './Dashboard';
 import { Conversation } from 'react-native-watson';
 import ChatBot  from "react-native-chatbot"; 
 import { responsiveWidth, responsiveHeight} from 'react-native-responsive-dimensions';
+console.disableYellowBox = true
 
 // Conversation.initialize( "yG6Eid66HK_SYGDa5s0lyz3zXj2_FoiU7bRI1qKi2LUQ" )
 // let workspaceId="10f0ecf9-98b7-4d0f-90bf-fce4137e8926"
